@@ -40,6 +40,8 @@ UAスタイルシートを活かせそうなサイトデザインであればnor
 
 http://www.shoeisha.com/book/hp/mcoding/1/
 
+https://github.com/yukihirai0505/my-layout/tree/master/standard-layout/README.md
+
 ## PART 2
 
 ブラウザの横幅にあわせてブロックが自動で移動する
@@ -50,6 +52,8 @@ http://www.shoeisha.com/book/hp/mcoding/1/
 
 http://www.shoeisha.com/book/hp/mcoding/2/
 
+https://github.com/yukihirai0505/my-layout/blob/master/grid-layout/README.md
+
 ## PART 3
 
 PC/SP両方に対応してシングルページレイアウト
@@ -58,3 +62,5 @@ PC/SP両方に対応してシングルページレイアウト
 - WEBフォント
 
 http://www.shoeisha.com/book/hp/mcoding/3/
+
+https://github.com/yukihirai0505/my-layout/tree/master/singlepage-layout/README.md

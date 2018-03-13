@@ -183,3 +183,11 @@ a要素に高さをもたせたい場合はdisplayプロパティにinline-block
 paddingやborderの領域は含まれない
 border-boxにすれば含めることができる
 
+### line-heightプロパティ
+
+line-heightは子要素にも引き継がれる
+pxや%で指定するよりも数値のみで指定するのがよい
+
+数値のみだとfont-sizeにその数値を掛けたものが適用される
+
+

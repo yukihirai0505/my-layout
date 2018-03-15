@@ -212,3 +212,68 @@ min-widthを100pxにすれば中の要素が100px以下の場合は要素幅が1
 中の要素の幅が100px以上になる場合にはそれにあわせて要素幅も広がる
 
 ### 改行によるスペースの非表示
+
+ソースの改行によってインラインレベルの要素の間に入るスペースを
+`font-size: 0;` の指定で非表示にする方法がある
+
+他にもいくつか対処法がある
+
+改行しない
+
+```
+<div class="parent">
+  <span>テキスト</span><span>テキスト</span><span>テキスト</span>
+</div>
+```
+
+タグで改行する
+
+```
+<div class="parent">
+  <span>テキスト</span
+  ><span>テキスト</span
+  ><span>テキスト</span>
+</div>
+```
+
+改行をコメントアウトする
+
+```
+<div class="parent">
+  <span>テキスト</span><!--
+  --><span>テキスト</span><!--
+  --><span>テキスト</span>
+</div>
+```
+
+displayプロパティの値をinline/inline-block以外にする
+
+```
+.parent span {
+  float: left;
+}
+```
+
+floatを指定した要素のdisplayプロパティの値は暗黙的にblockになる
+floatを使用する場合は横並びにする要素の終端で回り込みの解除が必要
+
+`display: table;` を使用する
+
+```
+.parent {
+  display: table;
+}
+.parent span {
+  display: table-cell;
+}
+```
+
+`display: flex;` を使用する
+
+```
+.parent {
+  display: block;
+}
+```
+
+CSS3で追加されたflexはブラウザによって現状、対応がまちまち
